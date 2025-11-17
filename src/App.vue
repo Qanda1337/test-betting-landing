@@ -27,16 +27,21 @@ const openRegistrationModal = () => {
         <BenefitsSection/>
 
         <div class="main-content-wrapper max-w-5xl mx-auto bg-[var(--bg-card)] rounded-2xl p-8 border-1 border-[var(--border-color)] space-y-4 shadow-custom-glow">
-          <div class="flex-auto">
-            <h1 class="text-[var(--text-main)] text-center flex-1">Сделай свою первую ставку на спорт, используя фрибет 15.0000p!
-              <!-- Кнопка Log In -->
-              <button
-                class="flex-1 bg-[var(--accent-primary)] text-[var(--bg-card)] font-semibold px-4 py-0.5 rounded-lg hover:bg-[var(--accent-secondary)] transition-colors duration-200 cursor-pointer"
-                @click="showModal = true"
-              >
-                Log In
-              </button>
-            </h1>
+          
+          <h1 class="text-[var(--text-main)] text-center text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+            Твой первый <span class="text-[var(--accent-primary)]">КРУПНЫЙ ВЫИГРЫШ</span> ждет!
+          </h1>
+          
+          <h2 class="text-[var(--text-secondary)] text-xl text-center font-medium">
+            Начни без риска: получи БЕСПЛАТНЫЙ фрибет <span class="text-white font-bold">15 000 ₽</span> прямо сейчас!
+          </h2>
+
+          <div class="flex justify-center pt-2">
+            <button
+              class="bg-[var(--accent-primary)] text-[var(--bg-card)] font-bold text-lg px-8 py-3 rounded-xl hover:opacity-90 transition-opacity duration-200 cursor-pointer shadow-lg shadow-[var(--accent-primary)]/40"
+              @click="openRegistrationModal" >
+              Забрать Фрибет и начать выигрывать!
+            </button>
           </div>
 
           <GameEventCard
