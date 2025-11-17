@@ -6,6 +6,8 @@ import GameEventCard from './components/GameEventCard.vue'
 import LiveIndicator from './components/LiveIndicator.vue';
 import RegistrationModal from './components/RegistrationModal.vue';
 import Footer from './components/Footer.vue';
+import BenefitsSection from './components/BenefitsSection.vue';
+import ExpertiseSection from './components/ExpertiseSection.vue';
 
 // Реактивная переменная для управления видимостью модального окна
 const showModal = ref(false);
@@ -21,9 +23,21 @@ const openRegistrationModal = () => {
   <div class="main-background" >
     <Header />
       <main class="flex-1 py-10 px-4" data-aos="fade-up">
+
+        <BenefitsSection/>
+
         <div class="main-content-wrapper max-w-5xl mx-auto bg-[var(--bg-card)] rounded-2xl p-8 border-1 border-[var(--border-color)] space-y-4 shadow-custom-glow">
-          
-          <h1 class="text-[var(--text-main)] text-center">Сделай свою первую ставку на спорт, используя фрибет 15.0000p!</h1>
+          <div class="flex-auto">
+            <h1 class="text-[var(--text-main)] text-center flex-1">Сделай свою первую ставку на спорт, используя фрибет 15.0000p!
+              <!-- Кнопка Log In -->
+              <button
+                class="flex-1 bg-[var(--accent-primary)] text-[var(--bg-card)] font-semibold px-4 py-0.5 rounded-lg hover:bg-[var(--accent-secondary)] transition-colors duration-200 cursor-pointer"
+                @click="showModal = true"
+              >
+                Log In
+              </button>
+            </h1>
+          </div>
 
           <GameEventCard
             @click="openRegistrationModal"
@@ -133,6 +147,9 @@ const openRegistrationModal = () => {
             </template>
           </GameEventCard>
         </div>
+
+        <ExpertiseSection/>
+
       </main>
     <Footer />
   </div>
