@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  /* BASE */
+  --bg-main: #0D0F12;
+  --bg-card: #181B20;
+  --border-base: #2A2F36;
+
+  /* ACCENT */
+  --accent-primary: #32FF6A;
+  --accent-secondary: #1ED760;
+
+  /* TEXT */
+  --text-main: #F2F4F6;
+  --text-secondary: #9CA3AF;
+}
+
+body {
+  background: var(--bg-main);
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
