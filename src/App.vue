@@ -18,123 +18,148 @@ const openRegistrationModal = () => {
 </script>
 
 <template>
-  <Header />
-    <main class="flex-1 py-10 px-4" data-aos="fade-up">
-      <div class="max-w-5xl mx-auto bg-[var(--bg-card)] rounded-2xl p-8 shadow-xxl border-1 border-[var(--border-color)] space-y-4">
-        
-        <h1 class="text-[var(--text-main)] text-center">Сделай свою первую ставку на спорт, используя фрибет 15.0000p!</h1>
+  <div class="main-background" >
+    <Header />
+      <main class="flex-1 py-10 px-4" data-aos="fade-up">
+        <div class="main-content-wrapper max-w-5xl mx-auto bg-[var(--bg-card)] rounded-2xl p-8 border-1 border-[var(--border-color)] space-y-4 shadow-custom-glow">
+          
+          <h1 class="text-[var(--text-main)] text-center">Сделай свою первую ставку на спорт, используя фрибет 15.0000p!</h1>
 
-        <GameEventCard
-          @click="openRegistrationModal"
-          teamA="Real Madrid"
-          teamB="Barcelona"
-          coef1="1.85"
-          draw="3.40"
-          coef2="4.20"
-          date="21.07"
-          time="19:00"
-          league="LaLiga"
-          countryCodeA="ES"  
-          countryCodeB="ES"
-        >
-          <template #live>
-            <LiveIndicator />
-          </template>
-        </GameEventCard>
+          <GameEventCard
+            @click="openRegistrationModal"
+            teamA="Real Madrid"
+            teamB="Barcelona"
+            coef1="1.85"
+            draw="3.40"
+            coef2="4.20"
+            date="21.07"
+            time="19:00"
+            league="LaLiga"
+            countryCodeA="ES"  
+            countryCodeB="ES"
+          >
+            <template #live>
+              <LiveIndicator />
+            </template>
+          </GameEventCard>
 
-        <GameEventCard
-          @click="openRegistrationModal"
-          teamA="Bayern"
-          teamB="Borussia"
-          coef1="1.65"
-          draw="3.90"
-          coef2="5.10"
-          date="22.07"
-          time="21:00"
-          league="Bundesliga"
-          countryCodeA="DE"
-          countryCodeB="DE"
-        >
-          <template #live>
-            <LiveIndicator />
-          </template>
-        </GameEventCard>
+          <GameEventCard
+            @click="openRegistrationModal"
+            teamA="Bayern"
+            teamB="Borussia"
+            coef1="1.65"
+            draw="3.90"
+            coef2="5.10"
+            date="22.07"
+            time="21:00"
+            league="Bundesliga"
+            countryCodeA="DE"
+            countryCodeB="DE"
+          >
+            <template #live>
+              <LiveIndicator />
+            </template>
+          </GameEventCard>
 
-        <GameEventCard
-          @click="openRegistrationModal"
-          teamA="Manchester City"
-          teamB="Liverpool"
-          coef1="2.10"
-          draw="3.50"
-          coef2="3.60"
-          date="23.07"
-          time="20:45"
-          league="Premier League"
-          countryCodeA="GB"
-          countryCodeB="GB"
-        >
-          <template #live>
-            <LiveIndicator />
-          </template>
-        </GameEventCard>
+          <GameEventCard
+            @click="openRegistrationModal"
+            teamA="Manchester City"
+            teamB="Liverpool"
+            coef1="2.10"
+            draw="3.50"
+            coef2="3.60"
+            date="23.07"
+            time="20:45"
+            league="Premier League"
+            countryCodeA="GB"
+            countryCodeB="GB"
+          >
+            <template #live>
+              <LiveIndicator />
+            </template>
+          </GameEventCard>
 
-        <GameEventCard
-          @click="openRegistrationModal"
-          teamA="Juventus"
-          teamB="Inter Milan"
-          coef1="2.40"
-          draw="3.10"
-          coef2="2.95"
-          date="24.07"
-          time="22:00"
-          league="Serie A"
-          countryCodeA="IT"
-          countryCodeB="IT"
-        >
-          <template #live>
-            <LiveIndicator />
-          </template>
-        </GameEventCard>
+          <GameEventCard
+            @click="openRegistrationModal"
+            teamA="Juventus"
+            teamB="Inter Milan"
+            coef1="2.40"
+            draw="3.10"
+            coef2="2.95"
+            date="24.07"
+            time="22:00"
+            league="Serie A"
+            countryCodeA="IT"
+            countryCodeB="IT"
+          >
+            <template #live>
+              <LiveIndicator />
+            </template>
+          </GameEventCard>
 
-        <GameEventCard
-          @click="openRegistrationModal"
-          teamA="PSG"
-          teamB="Marseille"
-          coef1="1.55"
-          draw="4.00"
-          coef2="5.20"
-          date="25.07"
-          time="21:00"
-          league="Ligue 1"
-          countryCodeA="FR"
-          countryCodeB="FR"
-        >
-          <template #live>
-            <LiveIndicator />
-          </template>
-        </GameEventCard>
+          <GameEventCard
+            @click="openRegistrationModal"
+            teamA="PSG"
+            teamB="Marseille"
+            coef1="1.55"
+            draw="4.00"
+            coef2="5.20"
+            date="25.07"
+            time="21:00"
+            league="Ligue 1"
+            countryCodeA="FR"
+            countryCodeB="FR"
+          >
+            <template #live>
+              <LiveIndicator />
+            </template>
+          </GameEventCard>
 
-        <GameEventCard
-          @click="openRegistrationModal"
-          teamA="Bayern"
-          teamB="Borussia Dortmund"
-          coef1="1.65"
-          draw="3.90"
-          coef2="5.10"
-          date="22.07"
-          time="21:00"
-          league="Bundesliga"
-          countryCodeA="DE"
-          countryCodeB="DE"
-        >
-          <template #live>
-            <LiveIndicator />
-          </template>
-        </GameEventCard>
-      </div>
-    </main>
-
-  <Footer />
+          <GameEventCard
+            @click="openRegistrationModal"
+            teamA="Bayern"
+            teamB="Borussia Dortmund"
+            coef1="1.65"
+            draw="3.90"
+            coef2="5.10"
+            date="22.07"
+            time="21:00"
+            league="Bundesliga"
+            countryCodeA="DE"
+            countryCodeB="DE"
+          >
+            <template #live>
+              <LiveIndicator />
+            </template>
+          </GameEventCard>
+        </div>
+      </main>
+    <Footer />
+  </div>
     
     <RegistrationModal :visible="showModal" @close="showModal = false" />
 </template>
+
+<style>
+.main-background {
+  background-image: url('./assets/background.png'); 
+  background-size: cover;
+  background-attachment: scroll; 
+  background-position: center center;
+  background-position: 50% 50%;
+  min-height: 100vh;
+  animation: backgroundPan 30s infinite alternate linear;
+}
+
+@keyframes backgroundPan {
+  0% { background-position: 55% 45%; }
+  100% { background-position: 45% 55%; }
+}
+
+.shadow-custom-glow {
+  box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+        0 2px 4px -2px rgba(0, 0, 0, 0.1),
+        0 0 40px -5px rgba(15, 186, 129, 0.4); 
+}
+</style>

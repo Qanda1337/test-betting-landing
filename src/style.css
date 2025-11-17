@@ -14,10 +14,3 @@
   --text-main: #F2F4F6;
   --text-secondary: #9CA3AF;
 }
-
-body {
-  background: var(--bg-main);
-  background-image: url('./assets/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
