@@ -5,6 +5,7 @@
     <button
       class="bg-[var(--accent-primary)] text-[var(--bg-card)] font-semibold px-4 py-0.5 rounded-lg hover:bg-[var(--accent-secondary)] transition-colors duration-200 cursor-pointer"
       @click="showModal = true"
+      id="Login"
     >
       Log In
     </button>

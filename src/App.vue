@@ -38,6 +38,7 @@ const openRegistrationModal = () => {
 
           <div class="flex justify-center pt-2">
             <button
+              id='CTA'
               class="bg-[var(--accent-primary)] text-[var(--bg-card)] font-bold text-lg px-8 py-3 rounded-xl hover:opacity-90 transition-opacity duration-200 cursor-pointer shadow-lg shadow-[var(--accent-primary)]/40"
               @click="openRegistrationModal" >
               Забрать Фрибет и начать выигрывать!

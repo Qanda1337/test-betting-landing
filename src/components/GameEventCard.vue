@@ -1,5 +1,6 @@
 <template>
   <div
+    id="event"
     class="cursor-pointer bg-[var(--bg-card)] border border-[var(--border-color)] rounded-xl p-4 flex flex-col gap-3 shadow-lg hover:border-[var(--accent-primary)] transition-colors duration-200"
     @click="showModal = true"
     data-aos="fade-up"
