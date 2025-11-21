@@ -13,6 +13,7 @@
     >
       <!-- Кнопка закрытия -->
       <button
+        id="close"
         class="absolute top-4 right-4 text-[var(--text-secondary)] hover:text-[var(--accent-primary)]"
         @click="$emit('close')"
       >
@@ -33,6 +34,7 @@
 
       <!-- Кнопка Зарегистрироваться -->
       <button
+        id="sign"
         class="w-full bg-[var(--accent-primary)] text-[var(--bg-card)] font-semibold py-3 rounded-lg hover:bg-[var(--accent-secondary)] transition-colors"
       >
         Зарегистрироваться
