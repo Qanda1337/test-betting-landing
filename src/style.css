@@ -14,3 +14,7 @@
   --text-main: #F2F4F6;
   --text-secondary: #9CA3AF;
 }
+
+body {
+  background-color: --bg-main;
+}
